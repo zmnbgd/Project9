@@ -41,4 +41,4 @@ The Utility queue: this should be used for long-running tasks that the user is a
 The Background queue: this is for long-running tasks that the user isn't actively aware of, or at least doesn't care about its progress or when it completes.
 
 
-
+If you want to try the other QoS queues, you could also use .userInteractive, .utility or .background.
