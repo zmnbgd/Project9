@@ -40,5 +40,14 @@ The Utility queue: this should be used for long-running tasks that the user is a
 
 The Background queue: this is for long-running tasks that the user isn't actively aware of, or at least doesn't care about its progress or when it completes.
 
-
 If you want to try the other QoS queues, you could also use .userInteractive, .utility or .background.
+
+
+
+Back to the main thread: DispatchQueue.main
+
+If you're on a background thread and want to execute code on the main thread, you need to call async() again. This time, however, you do it on DispatchQueue.main, which is the main thread, rather than one of the global quality of service queues.
+
+
+
+
